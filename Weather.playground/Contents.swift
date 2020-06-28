@@ -4,15 +4,13 @@ import PlaygroundSupport
 struct Weather: View {
     var body: some View {
         VStack(spacing: 8) {
-            Rectangle()
-            .foregroundColor(Color(UIColor.clear))
-                .background(
+            Circle()
+                .fill(
                     LinearGradient(gradient: Gradient(colors: [
-                        Color(UIColor.systemYellow),
-                        Color(UIColor.systemOrange)
-                    ]), startPoint: .top, endPoint: .bottom))
-            .frame(width: 48, height: 48)
-            .cornerRadius(24)
+                            Color(UIColor.systemYellow),
+                            Color(UIColor.systemOrange)
+                        ]), startPoint: .top, endPoint: .bottom))
+                .frame(width: 48, height: 48)
             
             VStack {
                 Text("72°")
