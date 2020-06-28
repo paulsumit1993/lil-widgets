@@ -26,8 +26,6 @@ struct Stocks: View {
                     }
                 }
             }
-            
-            Spacer()
         }
         .padding()
         .frame(width: 155, height: 155)
